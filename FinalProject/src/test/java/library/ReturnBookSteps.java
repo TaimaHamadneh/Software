@@ -8,12 +8,12 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import librarry.Admin;
 import librarry.BookLibrary;
-import librarry.MyBook;
+import librarry.MyBook1;
 import librarry.User;
 
 public class ReturnBookSteps {
 	Admin a = new Admin();
-	MyBook b = new MyBook();
+	MyBook1 b = new MyBook1();
 	BookLibrary b2;
 	boolean l, v, t;
 

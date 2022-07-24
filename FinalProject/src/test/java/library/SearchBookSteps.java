@@ -10,13 +10,13 @@ import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import librarry.MyBook;
+import librarry.MyBook1;
 import librarry.BookLibrary;
 
 public class SearchBookSteps {
 
 	public BookLibrary b;
-	public static ArrayList<MyBook> item = new ArrayList<MyBook>();
+	public static ArrayList<MyBook1> item = new ArrayList<MyBook1>();
 	String s;
 	String out;
 

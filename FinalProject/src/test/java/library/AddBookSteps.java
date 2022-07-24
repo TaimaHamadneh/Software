@@ -7,13 +7,13 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import librarry.Admin;
 import librarry.BookLibrary;
-import librarry.MyBook;
+import librarry.MyBook1;
 
 
 public class AddBookSteps {
 
 	Admin a = new Admin();
-	MyBook b = new MyBook();
+	MyBook1 b = new MyBook1();
 	BookLibrary bl;
 	boolean l, v, t;
 

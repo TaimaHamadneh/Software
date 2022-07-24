@@ -7,11 +7,11 @@ import java.util.logging.Logger;
 
 import librarry.Admin;
 public class BookLibrary {
-	protected static final List<MyBook> item = new ArrayList<MyBook>();
-	protected static final MyBook b1=new MyBook();
-	protected static final MyBook b2=new MyBook();
-	protected static final MyBook b3=new MyBook();
-	protected static final MyBook b4=new MyBook();
+	protected static final List<MyBook1> item = new ArrayList<MyBook1>();
+	protected static final MyBook1 b1=new MyBook1();
+	protected static final MyBook1 b2=new MyBook1();
+	protected static final MyBook1 b3=new MyBook1();
+	protected static final MyBook1 b4=new MyBook1();
 	
 	
 	protected static final List<Admin> admins = new ArrayList<Admin>();
@@ -117,7 +117,7 @@ public class BookLibrary {
 		return t;
 	}
 
-	public boolean addBook(MyBook b) {
+	public boolean addBook(MyBook1 b) {
 		item.add(b);
 		return true;
 	}
@@ -159,7 +159,7 @@ public class BookLibrary {
 		 {
 			 counter++;
 		  
-		    for (MyBook b : item) 
+		    for (MyBook1 b : item) 
 		    {
 		        if (b.getTitle().equals(title)) 
 		        {
@@ -182,7 +182,7 @@ public class BookLibrary {
 			 public void returnBook(String title) 
 			 {
 				 counter--;
-			    for (MyBook b : item) 
+			    for (MyBook1 b : item) 
 			    {
 			        if (b.getTitle().equals(title)) 
 			        {

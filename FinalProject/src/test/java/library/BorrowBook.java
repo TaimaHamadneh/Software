@@ -2,23 +2,24 @@ package library;
 
 import static org.junit.Assert.assertTrue;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Date;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import librarry.Admin;
 import librarry.BookLibrary;
-import librarry.MyBook;
+import librarry.MyBook1;
 import librarry.User;
 
 
 public class BorrowBook {
 	User a = new User();
-	MyBook b = new MyBook();
+	MyBook1 b = new MyBook1();
 	BookLibrary bl;
 	boolean l, v, t;
-
 	
 	public BorrowBook(BookLibrary bl2) {
 		super();
@@ -51,7 +52,9 @@ public class BorrowBook {
 	        assertTrue(!t);
 
 	    } else if (bl.found == 2) {
-	        System.out.println("You successfully borrowed " );
+	        System.out.println("You successfully borrowed ");
+			LocalDate today = LocalDate.now();
+			b.setDate(today);
 	        assertTrue(t);
 	    }
 	

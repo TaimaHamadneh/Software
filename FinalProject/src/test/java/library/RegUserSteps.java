@@ -10,13 +10,13 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import librarry.Admin;
 import librarry.BookLibrary;
-import librarry.MyBook;
+import librarry.MyBook1;
 import librarry.User;
 
 public class RegUserSteps {
 	User user = new User();
 	Admin admin = new Admin();
-	MyBook book = new MyBook();
+	MyBook1 book = new MyBook1();
 	BookLibrary booklib;
 	boolean l, v, t;
 

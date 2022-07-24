@@ -1,15 +1,23 @@
 package librarry;
 
-import javax.persistence.Entity;
+import java.time.LocalDate;
 
-@Entity
-public class MyBook {
-	
+public class MyBook1 {
+
 	private String bookTitle;
 	private String bookAuther;
 	private String bookIsbn;
 	private Boolean bookBorrow;
+	//Date dateServer = new Date(); 
+	private LocalDate dateServer;
 
+	public void setDate(LocalDate date){
+		this.dateServer = date;
+	}
+	public LocalDate getDate(){
+		return dateServer;
+	}
+	
 	public void setTitle(String title){
 		this.bookTitle = title;
 	}
@@ -36,5 +44,4 @@ public class MyBook {
 	public Boolean getBorrow(){
 		return bookBorrow;
 	}
-	
 }
